@@ -3,9 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Welcome To My Website</h1>
+    <div class="app-container">
+
+        <header>
+            <div class="logo-area">
+                <img src="logo.png" alt="Emblem Logo" class="site-logo">
+            </div>
+            
+            <nav class="main-nav">
+                <a href="#" class="nav-link active" data-target="home">Home</a>
+                <a href="#" class="nav-link" data-target="about">About Me</a>
+                <a href="#" class="nav-link" data-target="achievements">Achievements</a>
+                <a href="#" class="nav-link" data-target="activities">Activities</a>
+                <a href="#" class="nav-link" data-target="skills">Skills</a>
+            </nav>
+
+            <div class="action-btns">
+                <button id="theme-toggle" class="btn btn-outline">🌙 Dark Mode</button>
+            </div>
+        </header>
+
+        <main id="content-display">
+
+            <section id="home" class="page active">
+                <div class="profile-banner fade-in">
+                    <div class="profile-content">
+                        <span class="badge">Welcome to my profile</span>
+                        <h1>Hazeljhon De la Rosa</h1>
+                        <p>A student aspiring to become a skilled designer/artist as well as a proficient developer.</p>
+                        <button id="read-more-btn" class="text-link">Read More <span>→</span></button>
+                    </div>
+                    
+                    <div class="profile-image-placeholder">
+                        <img src="Me.png" alt="My Profile Picture" class="profile-img">
+                    </div>
+                </div>
+
+                <div class="dashboard-grid">
+
+                    <div class="grid-column">
+                        <h2 class="section-title">Featured Project</h2>
+                        <div class="card project-card hover-anim">
+                            <div class="project-img-container">
+                                <img src="DB preview.JPG" alt="Featured Project Image" class="project-banner-img">
+                            </div>
+                            <div class="project-details">
+                                <h3>Davie's Burger</h3>
+                            </div>
+                        </div>
+                        <button id="view-projects-btn" class="btn btn-block hover-anim">View More Projects →</button>
+                    </div>
+
+                    <div class="grid-column info-cards-container">
+                        <div class="info-card hover-anim">
+                            <div class="info-icon">🎯</div>
+                            <div class="info-text">
+                                <h3>Core Focus</h3>
+                                <p>Broaden my development skills as well as artistic abilities.</p>
+                            </div>
+                        </div>
+                        <div class="info-card hover-anim">
+                            <div class="info-icon">🎓</div>
+                            <div class="info-text">
+                                <h3>Education</h3>
+                                <p>Currently going through college pursuing a degree in Computer Science.</p>
+                            </div>
+                        </div>
+                        <div class="info-card hover-anim">
+                            <div class="info-icon">📌</div>
+                            <div class="info-text">
+                                <h3>Current Project</h3>
+                                <p>Developing a simple game using HTML, CSS, and JavaScript to test out my skills</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="page">
+                <div class="page-header fade-in">
+                    <span class="badge">Get to know me</span>
+                    <h1>About Me</h1>
+                    <p>Who Am I?</p>
+                </div>
+                
+                <div class="about-grid fade-in">
+                    <div class="content-card hover-anim highlight-card">
+                        <div class="quote-box">
+                            <p class="quote">"To become one of the best you have to try something crazy or weird till it works!"</p>
+                        </div>
+                        <div class="about-tags">
+                            <span class="tag-pill">🎨 Artist(Beginner)</span>
+                            <span class="tag-pill">💻 Web Developer</span>
+                            <span class="tag-pill">📚 Game Developer</span>
+                        </div>
+                    </div>
+
+                    <div class="content-card hover-anim">
+                        <h2>My Story</h2>
+                        <p>A student who gained interest in development of apps and sites as well as the creationg of creative arts no matter what form it is</p>
+                        <br>
+                        <p>I am still walking through life, learning about different things and trying to expand my knowledge and skills. I wish to create apps, specifically games with creative environment and compelling stories.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="achievements" class="page">
+                <div class="page-header fade-in">
+                    <span class="badge">Milestones</span>
+                    <h1>Achievements</h1>
+                    <p>Key highlights and recognitions I've earned.</p>
+                </div>
+
+                <div class="achievements-timeline fade-in">
+                    <div class="timeline-card hover-anim">
+                        <div class="timeline-icon">🏆</div>
+                        <div class="timeline-content">
+                            <span class="timeline-date"></span>
+                            <h3>Currently None</h3>
+                            <p>[Placeholder]</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-card hover-anim">
+                        <div class="timeline-icon">📜</div>
+                        <div class="timeline-content">
+                            <span class="timeline-date"></span>
+                            <h3>Currently none</h3>
+                            <p>[Placeholder]</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-card hover-anim">
+                        <div class="timeline-icon">🏅</div>
+                        <div class="timeline-content">
+                            <span class="timeline-date"></span>
+                            <h3>Currently None</h3>
+                            <p>[Placeholder]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="activities" class="page">
+                <div class="page-header fade-in">
+                    <span class="badge">Showcase</span>
+                    <h1>Activities & Projects</h1>
+                    <p>Click on any card to view the detailed project page.</p>
+                </div>
+                
+                <div class="activities-gallery fade-in">
+                    <a href="https://hazeldelarosa.github.io/Hazel-Dela-Rosa/Projects/Prelim/Fashion%20Blog/Fashion%20Blog.html" class="activity-card hover-anim">
+                        <div class="card-img-wrapper">
+                            <img src="FB.JPG" alt="Project 1">
+                            <span class="card-category">Web App</span>
+                        </div>
+                        <div class="activity-info">
+                            <h3>Fashion Blog</h3>
+                            <p>Interactive dashboard for tracking personal goals.</p>
+                        </div>
+                    </a>
+
+                    <a href="https://hazeldelarosa.github.io/Hazel-Dela-Rosa/Projects/Prelim/Wine%20Festival/Wine%20Festival.html" class="activity-card hover-anim">
+                        <div class="card-img-wrapper">
+                            <img src="WF.JPG" alt="Project 2">
+                            <span class="card-category"></span>
+                        </div>
+                        <div class="activity-info">
+                            <h3>Wine Festival</h3>
+                            <p>Modern shopping layout with sleek micro-animations.</p>
+                        </div>
+                    </a>
+
+                    <a href="https://hazeldelarosa.github.io/Hazel-Dela-Rosa/Projects/Prelim/Davie's%20Burg/Burger.html" class="activity-card hover-anim">
+                        <div class="card-img-wrapper">
+                            <img src="DB preview.JPG" alt="Project 3">
+                            <span class="card-category">Research</span>
+                        </div>
+                        <div class="activity-info">
+                            <h3>Dave's Burger</h3>
+                            <p>An interactive graph rendering complex astronomical data.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="coming-soon hover-anim fade-in">
+                    <div class="coming-soon-icon">🚀</div>
+                    <h3>More Projects Coming Soon</h3>
+                    <p>Currently working on new creations. Stay tuned!</p>
+                </div>
+            </section>
+
+            <section id="skills" class="page">
+                <div class="page-header fade-in">
+                    <span class="badge">Toolkit</span>
+                    <h1>Skills</h1>
+                    <p>Tools and technologies I work with.</p>
+                </div>
+
+                <div class="skills-grid fade-in">
+                    <div class="info-card hover-anim">
+                        <div class="info-icon">💻</div>
+                        <div class="info-text">
+                            <h3>Frontend</h3>
+                            <p>HTML, CSS, JavaScript, Java</p>
+                        </div>
+                    </div>
+                    <div class="info-card hover-anim">
+                        <div class="info-icon">⚙️</div>
+                        <div class="info-text">
+                            <h3>Backend</h3>
+                            <p>SQL</p>
+                        </div>
+                    </div>
+                    <div class="info-card hover-anim">
+                        <div class="info-icon">🎨</div>
+                        <div class="info-text">
+                            <h3>Design</h3>
+                            <p>Figma, Ibis paint, Piskel</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
